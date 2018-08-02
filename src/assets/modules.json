@@ -1,0 +1,28 @@
+[
+    {
+        "path": "moduleA",
+        "location": "./assets/modulea.umd.js",
+        "moduleName": "ModuleaModule",
+        "description": "clarity form",
+        "registered": true
+    },
+    {
+        "path": "moduleB",
+        "location": "./assets/moduleb.umd.js",
+        "moduleName": "ModulebModule",
+        "description": "clarity tab control with table and card - custom elements"
+    },
+    {
+        "path": "moduleC",
+        "location": "./assets/modulec.umd.js",
+        "moduleName": "ModulecModule",
+        "description": "clarity modal - custom elements",
+        "registered": true
+    },
+    {
+        "path": "moduled",
+        "location": "./assets/moduled.umd.js",
+        "moduleName": "ModuledModule",
+        "description": "default subnavigation with 3 components and some clarity stuff"
+    }
+]

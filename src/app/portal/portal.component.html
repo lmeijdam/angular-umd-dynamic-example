@@ -1,0 +1,32 @@
+<h1>Portal works</h1>
+
+<div class="alert alert-danger" *ngIf="errorVisible">
+    <div class="alert-items">
+        <div class="alert-item static">
+            <div class="alert-icon-wrapper">
+                <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
+            </div>
+            <span class="alert-text">
+                {{ errorMessage }}
+            </span>
+        </div>
+    </div>
+    <button type="button" class="close" aria-label="Close" (click)="closeError()">
+        <clr-icon aria-hidden="true" shape="close"></clr-icon>
+    </button>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" *ngFor="let module of installedModules$ | async">
+        <div class="card">
+            <div class="card-header">
+                {{ module.moduleName }}
+            </div>
+            <div class="card-block">                   
+                {{ module.description }} 
+            </div>
+            <div class="card-footer">
+                    <button class="btn btn-primary" (click)="enableModule(module)">Enable</button>
+            </div>
+        </div>
+    </div>
+</div>
