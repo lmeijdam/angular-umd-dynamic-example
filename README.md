@@ -5,7 +5,7 @@ One of the sources guiding me can be found here; [https://github.com/kirjs/angul
 
 ## How to start
 Clone or download this repository;
-> git clone https://github.com/kirjs/angular-dynamic-module-loading
+> git clone https://github.com/lmeijdam/angular-umd-dynamic-example
 
 Navigate to the folder and install all dependencies;
 
@@ -31,6 +31,12 @@ Now build the module with
 >ng build LibraryName
 
 and copy the umd bundle to the 'assets' folder.
+
+## AOT and SystemJS
+The app now supports AOT compilation by typing;
+> ng build --aot
+
+Next to that I've changed the use of eval to the use of SystemJS to load the modules. 
 
 ## Running the application
 For the application I've used [https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server) which let your application run on port 8080 by default. After install you're able to run this application locally
